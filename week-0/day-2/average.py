@@ -2,9 +2,8 @@
 # которая принимает список чисел и возвращает их среднее значение.
 
 def average(numbers):
-    result = 0
-    for i in numbers:
-        result += i
-    return result / len(numbers)
+    if not numbers:
+        return 0
+    return sum(numbers) / len(numbers)
     
 print(average([1,2,3]))
